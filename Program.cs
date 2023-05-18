@@ -7,6 +7,5 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
-app.MapGet("/", () => "怡心阅读WebAPI");
-app.MapGet("/test", () => "Test API 5.19");
+app.MapGet("/api", () => "怡心阅读 后端接口 WebAPI");
 app.Run();
