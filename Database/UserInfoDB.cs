@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-class UserInfoDB : DbContext
+public class UserInfoDB : DbContext
 {
     public UserInfoDB(DbContextOptions<UserInfoDB> options) : base(options) { }
-    public DbSet<UserInfo> UserInfos { get; set; }
+    public DbSet<UserInfo> UserInfos { get; set; } = null!;
 }
